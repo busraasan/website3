@@ -1,0 +1,2707 @@
+WARNING - django.request |                        2019-01-21 11:28:42,172  
+Not Found: /old_rover.html
+---
+WARNING - django.request |                        2019-01-21 11:28:42,223  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-21 12:07:41,892  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-01-21 12:07:49,342  
+Not Found: /old_rover.html
+---
+ERROR - django.request |                        2019-01-21 12:08:22,067  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-01-21 12:09:22,249  
+Not Found: /oldrover
+---
+WARNING - django.request |                        2019-01-21 21:44:11,019  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-21 21:44:23,129  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+ERROR - django.request |                        2019-01-21 21:55:00,867  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+ERROR - django.request |                        2019-01-21 21:55:01,885  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+WARNING - django.request |                        2019-01-22 11:10:00,945  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-22 11:10:05,741  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+ERROR - django.request |                        2019-01-22 11:16:55,143  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+ERROR - django.request |                        2019-01-22 11:16:58,694  
+Internal Server Error: /manage/old_rover/member/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_member" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_member"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_member" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_member"
+                                          ^
+
+ERROR - django.request |                        2019-01-22 11:17:05,411  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+ERROR - django.request |                        2019-01-22 11:19:56,878  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+ERROR - django.request |                        2019-01-22 11:24:07,854  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+WARNING - django.security.SuspiciousSession |                        2019-01-22 11:37:47,675  
+Session data corrupted
+---
+WARNING - django.security.SuspiciousSession |                        2019-01-22 11:37:47,727  
+Session data corrupted
+---
+WARNING - django.security.SuspiciousSession |                        2019-01-22 11:37:51,871  
+Session data corrupted
+---
+ERROR - django.request |                        2019-01-22 11:38:00,208  
+Internal Server Error: /manage/old_rover/member/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_member" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_member"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_member" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_member"
+                                          ^
+
+ERROR - django.request |                        2019-01-22 11:38:07,051  
+Internal Server Error: /manage/old_rover/addrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_addrover"
+                                          ^
+
+ERROR - django.request |                        2019-01-22 11:38:27,574  
+Internal Server Error: /manage/old_rover/addrover/add/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: INSERT INTO "old_rover_addrover" ("rover_name") VALUES ('ROV...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1553, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1450, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1490, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1026, in save_model
+    obj.save()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/base.py", line 842, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/base.py", line 880, in _do_insert
+    using=using, raw=raw)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1281, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_addrover" does not exist
+LINE 1: INSERT INTO "old_rover_addrover" ("rover_name") VALUES ('ROV...
+                    ^
+
+ERROR - django.request |                        2019-01-22 11:39:46,577  
+Internal Server Error: /manage/old_rover/member/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_member" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_member"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_member" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "old_rover_member"
+                                          ^
+
+ERROR - django.request |                        2019-01-22 11:39:49,910  
+Internal Server Error: /manage/old_rover/member/add/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "old_rover_subteam" does not exist
+LINE 1: ...eam"."name", "old_rover_subteam"."leader_id" FROM "old_rover...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "old_rover_subteam" does not exist
+LINE 1: ...eam"."name", "old_rover_subteam"."leader_id" FROM "old_rover...
+                                                             ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 194, in render
+    return template.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 999, in render
+    return render_value_in_context(output, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 978, in render_value_in_context
+    value = str(value)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/html.py", line 371, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/forms/boundfield.py", line 36, in __str__
+    return self.as_widget()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/forms/boundfield.py", line 118, in as_widget
+    **kwargs
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/forms/widgets.py", line 234, in render
+    context = self.get_context(name, value, attrs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/widgets.py", line 294, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/forms/widgets.py", line 234, in render
+    context = self.get_context(name, value, attrs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/forms/widgets.py", line 675, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/forms/widgets.py", line 637, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/forms/widgets.py", line 585, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/forms/models.py", line 1140, in __iter__
+    for obj in queryset:
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 336, in _iterator
+    yield from self._iterable_class(self, chunked_fetch=use_chunked_fetch, chunk_size=chunk_size)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1067, in execute_sql
+    cursor.close()
+psycopg2.OperationalError: cursor "_django_curs_139740943886080_1" does not exist
+
+WARNING - django.security.SuspiciousSession |                        2019-01-22 12:10:00,097  
+Session data corrupted
+---
+WARNING - django.security.SuspiciousSession |                        2019-01-22 12:10:00,145  
+Session data corrupted
+---
+WARNING - django.security.SuspiciousSession |                        2019-01-22 12:10:03,714  
+Session data corrupted
+---
+ERROR - django.request |                        2019-01-22 12:11:55,296  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-22 12:13:27,306  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-01-22 12:21:20,376  
+Not Found: /favicon.ico
+---
+WARNING - django.request |                        2019-01-22 12:21:56,550  
+Not Found: /oldrover
+---
+ERROR - django.request |                        2019-01-22 12:23:55,986  
+Internal Server Error: /oldrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/old_rover/views.py", line 23, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+old_rover.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-22 12:46:23,711  
+Internal Server Error: /oldrover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/old_rover/views.py", line 23, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+old_rover.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-01-22 12:46:23,995  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-22 12:50:49,868  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-01-24 14:08:02,796  
+Not Found: /old_rover
+---
+WARNING - django.request |                        2019-01-24 14:08:02,862  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-24 14:08:11,105  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-01-24 14:08:23,711  
+Not Found: /old_rover
+---
+WARNING - django.request |                        2019-01-24 14:08:34,732  
+Not Found: /old_rover
+---
+WARNING - django.request |                        2019-01-24 14:08:34,789  
+Not Found: /favicon.ico
+---
+WARNING - django.request |                        2019-01-24 14:10:20,117  
+Not Found: /old_rover
+---
+WARNING - django.request |                        2019-01-24 14:10:22,801  
+Not Found: /old_rover
+---
+WARNING - django.request |                        2019-01-24 14:11:49,356  
+Not Found: /o
+---
+ERROR - django.request |                        2019-01-24 14:11:53,858  
+Internal Server Error: /rover17/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/ROVER2017/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+ROVER2017.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-24 14:12:28,503  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-24 14:13:43,247  
+Internal Server Error: /rover17/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/ROVER2017/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+ROVER2017.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-01-24 14:13:43,448  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-24 14:17:59,836  
+Internal Server Error: /rover17/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/ROVER2017/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+ROVER2017.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-24 14:28:54,948  
+Internal Server Error: /rover17/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/ROVER2017/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+ROVER2017.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-24 14:59:14,596  
+Internal Server Error: /rover17/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/ROVER2017/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+ROVER2017.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-24 15:01:16,447  
+Internal Server Error: /rover18/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/ROVER2018/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+ROVER2018.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-24 15:02:39,408  
+Internal Server Error: /rover18/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/ROVER2018/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+ROVER2018.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-24 15:28:36,312  
+Internal Server Error: /rover18/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/ROVER2018/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+ROVER2018.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-01-24 15:31:54,588  
+Internal Server Error: /medya/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 21, in get_context_data
+    'page': MP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-01-24 15:36:01,600  
+Not Found: /rover18/rover17
+---
+WARNING - django.request |                        2019-01-24 15:36:13,607  
+Not Found: /takım-üyeleri/rover17
+---
+WARNING - django.request |                        2019-01-24 15:36:44,635  
+Not Found: /takım-üyeleri/rover17
+---
+WARNING - django.request |                        2019-01-24 15:36:45,645  
+Not Found: /takım-üyeleri/rover17
+---
+WARNING - django.request |                        2019-01-24 15:36:55,549  
+Not Found: /rover17/rover18
+---
+WARNING - django.request |                        2019-01-24 15:37:37,028  
+Not Found: /rover17/rover18
+---
+WARNING - django.request |                        2019-01-24 15:38:02,161  
+Not Found: /rover18/rover17
+---
+WARNING - django.request |                        2019-01-24 15:47:34,581  
+Not Found: /rover18/
+---
+WARNING - django.request |                        2019-01-24 15:47:35,815  
+Not Found: /rover18/
+---
+WARNING - django.request |                        2019-01-24 15:47:55,082  
+Not Found: /takım-üyeleri/rover17
+---
+WARNING - django.request |                        2019-01-24 15:57:16,105  
+Not Found: /takım-üyeleri/rover17
+---
+WARNING - django.request |                        2019-01-24 15:58:44,275  
+Not Found: /takım-üyeleri/rover18
+---
+ERROR - django.request |                        2019-01-24 16:29:18,132  
+Internal Server Error: /
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'rover17'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 35: 'rover17'. Did you forget to register or load this tag?
+ERROR - django.request |                        2019-01-24 16:29:20,015  
+Internal Server Error: /
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'rover17'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 35: 'rover17'. Did you forget to register or load this tag?
+ERROR - django.request |                        2019-01-24 16:29:29,131  
+Internal Server Error: /
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'rover17'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 35: 'rover17'. Did you forget to register or load this tag?
+ERROR - django.request |                        2019-01-24 16:29:33,860  
+Internal Server Error: /
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'rover17'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 35: 'rover17'. Did you forget to register or load this tag?
+ERROR - django.request |                        2019-01-24 16:30:07,508  
+Internal Server Error: /
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: "'rover17'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 35: ''rover17''. Did you forget to register or load this tag?
+ERROR - django.request |                        2019-01-24 16:30:09,521  
+Internal Server Error: /
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: "'rover17'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 35: ''rover17''. Did you forget to register or load this tag?
+WARNING - django.request |                        2019-01-25 18:35:35,367  
+Not Found: /rover17/img/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-25 18:36:00,427  
+Not Found: /rover17/img/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-25 18:36:13,206  
+Not Found: /rover17/img/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-25 18:39:31,790  
+Not Found: /rover17/itu_rover/img/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-25 18:39:33,342  
+Not Found: /rover17/itu_rover/img/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-25 18:39:37,903  
+Not Found: /rover18/itu_rover/img/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-25 19:02:05,616  
+Not Found: /rover18/website-master/itu_rover/img/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-25 19:02:09,336  
+Not Found: /rover17/website-master/itu_rover/img/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-26 10:58:16,172  
+Not Found: /rover17/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-26 10:58:18,042  
+Not Found: /rover17/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-26 10:59:06,893  
+Not Found: /rover17/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-26 10:59:09,417  
+Not Found: /rover17/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-26 11:02:17,260  
+Not Found: /rover17/VAKIF_EMEKLİLİK.png
+---
+WARNING - django.request |                        2019-01-26 11:05:03,060  
+Not Found: /rover17/vakif.jpg
+---
+WARNING - django.request |                        2019-01-26 11:05:04,745  
+Not Found: /rover17/vakif.jpg
+---
+WARNING - django.request |                        2019-01-26 11:05:23,547  
+Not Found: /rover17/img/vakif.jpg
+---
+WARNING - django.request |                        2019-01-26 11:42:30,770  
+Not Found: /favicon.ico
+---
+WARNING - django.request |                        2019-01-28 01:27:52,929  
+Not Found: /img/vakif.jpg
+---
+WARNING - django.request |                        2019-01-29 15:45:49,739  
+Not Found: /img/vakif.jpg
+---
+WARNING - django.request |                        2019-01-29 15:45:51,104  
+Not Found: /img/vakif.jpg
+---
+WARNING - django.request |                        2019-01-29 15:46:36,039  
+Not Found: /img/vakif.jpg
+---
+WARNING - django.request |                        2019-01-29 15:46:36,112  
+Not Found: /favicon.ico
+---
+WARNING - django.request |                        2019-01-29 15:47:29,760  
+Not Found: /img/vakif.jpg
+---
+WARNING - django.request |                        2019-01-29 15:47:32,863  
+Not Found: /rover18/..static/img/vakif.jpg
+---
+ERROR - django.request |                        2019-01-31 12:20:38,600  
+Internal Server Error: /rover18/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: old_rover.html
+WARNING - django.request |                        2019-01-31 12:20:38,932  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-31 12:32:56,918  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 20, in get_context_data
+    'techteamcaptain': techcaptain,
+NameError: name 'techcaptain' is not defined
+WARNING - django.request |                        2019-01-31 16:30:20,891  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-31 16:30:27,329  
+Internal Server Error: /manage/members/techteamcaptain/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "members_techteamcaptain" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "members_techteamcaptain"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "members_techteamcaptain" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "members_techteamcaptain"
+                                          ^
+
+ERROR - django.request |                        2019-01-31 16:35:24,549  
+Internal Server Error: /manage/members/techteamcaptain/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "members_techteamcaptain" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "members_techteamcaptain"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/options.py", line 705, in get_changelist_instance
+    self,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.get_results(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 175, in get_results
+    result_count = paginator.count
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 186, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 124, in _record
+    return method(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "members_techteamcaptain" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "members_techteamcaptain"
+                                          ^
+
+WARNING - django.request |                        2019-01-31 17:03:13,593  
+Not Found: /favicon.ico
+---
+DEBUG - PIL.PngImagePlugin |                        2019-01-31 17:03:40,043  
+STREAM b'IHDR' 16 13
+---
+DEBUG - PIL.PngImagePlugin |                        2019-01-31 17:03:40,043  
+STREAM b'bKGD' 41 6
+---
+DEBUG - PIL.PngImagePlugin |                        2019-01-31 17:03:40,043  
+b'bKGD' 41 6 (unknown)
+---
+DEBUG - PIL.PngImagePlugin |                        2019-01-31 17:03:40,043  
+STREAM b'pHYs' 59 9
+---
+DEBUG - PIL.PngImagePlugin |                        2019-01-31 17:03:40,043  
+STREAM b'zTXt' 80 287
+---
+DEBUG - PIL.PngImagePlugin |                        2019-01-31 17:03:40,043  
+STREAM b'IDAT' 379 32768
+---
+ERROR - django.request |                        2019-01-31 17:17:11,133  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'print'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 233, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 533, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 53: 'print', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+WARNING - django.request |                        2019-01-31 17:17:11,576  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-01-31 17:17:43,247  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'print'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 233, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 533, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 53: 'print', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR - django.request |                        2019-01-31 17:17:45,828  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'print'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/loader_tags.py", line 233, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    raise self.error(token, e)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/template/base.py", line 533, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 53: 'print', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR - django.request |                        2019-02-01 17:07:50,455  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 20, in get_context_data
+    'techleader': techleader,
+NameError: name 'techleader' is not defined
+WARNING - django.request |                        2019-02-01 17:07:50,789  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-02-01 17:08:38,754  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 20, in get_context_data
+    'techleader': techleader,
+NameError: name 'techleader' is not defined
+WARNING - django.request |                        2019-02-01 17:14:21,031  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-02-01 17:16:08,202  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 20, in get_context_data
+    'techleader': techleader,
+NameError: name 'techleader' is not defined
+ERROR - django.request |                        2019-02-01 17:18:20,459  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 18, in get_context_data
+    'advisors': TeamAdvisor.objects.get().member,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: TeamAdvisor matching query does not exist.
+ERROR - django.request |                        2019-02-01 17:18:21,890  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 18, in get_context_data
+    'advisors': TeamAdvisor.objects.get().member,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: TeamAdvisor matching query does not exist.
+ERROR - django.request |                        2019-02-01 17:18:22,966  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 18, in get_context_data
+    'advisors': TeamAdvisor.objects.get().member,
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: TeamAdvisor matching query does not exist.
+ERROR - django.request |                        2019-02-01 17:18:46,069  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 20, in get_context_data
+    'techleader': techleader.objects.get().member,
+NameError: name 'techleader' is not defined
+ERROR - django.request |                        2019-02-01 17:18:46,763  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 20, in get_context_data
+    'techleader': techleader.objects.get().member,
+NameError: name 'techleader' is not defined
+ERROR - django.request |                        2019-02-01 17:18:47,462  
+Internal Server Error: /takım-üyeleri/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/members/views.py", line 20, in get_context_data
+    'techleader': techleader.objects.get().member,
+NameError: name 'techleader' is not defined
+ERROR - django.request |                        2019-02-01 17:34:28,775  
+Internal Server Error: /rover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/rover/views.py", line 13, in get_context_data
+    'page': RP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+rover.models.DoesNotExist: RoverPage matching query does not exist.
+ERROR - django.request |                        2019-02-02 14:56:37,248  
+Internal Server Error: /rover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/rover/views.py", line 13, in get_context_data
+    'page': RP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+rover.models.DoesNotExist: RoverPage matching query does not exist.
+WARNING - django.request |                        2019-02-02 14:56:37,710  
+Not Found: /favicon.ico
+---
+WARNING - django.request |                        2019-02-02 15:06:46,291  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-02-02 16:31:39,746  
+Internal Server Error: /rover/
+---
+Traceback (most recent call last):
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/views/generic/base.py", line 150, in get
+    context = self.get_context_data(**kwargs)
+  File "/home/asan/Desktop/website-master/itu_rover/rover/views.py", line 13, in get_context_data
+    'page': RP.objects.get(),
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/asan/.virtualenvs/roverweb/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+rover.models.DoesNotExist: RoverPage matching query does not exist.
+WARNING - django.request |                        2019-02-02 16:31:39,937  
+Not Found: /favicon.ico
+---
